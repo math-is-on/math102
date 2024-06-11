@@ -1,0 +1,153 @@
+#+title: The Unit Circle: Sines and Cosines
+#+author: Chase Mathison
+#+date: 29 January 2024
+#+email: cmathiso@su.edu
+#+options: H:2 ':t ::t <:t email:t text:t todo:nil toc:nil 
+#+startup: showall
+#+startup: indent
+#+startup: hidestars
+#+startup: beamer
+#+latex_class: beamer
+#+latex_class_options: [presentation]
+#+COLUMNS: %40ITEM %10BEAMER_env(Env) %9BEAMER_envargs(Env Args) %5BEAMER_act(Act) %4BEAMER_col(Col) %10BEAMER_extra(Extra)
+#+latex_header: \mode<beamer>{\usetheme{Madrid}}
+#+latex_header: \definecolor{SUred}{rgb}{0.59375, 0, 0.17969} % SU red (primary)
+#+latex_header: \definecolor{SUblue}{rgb}{0, 0.17578, 0.38281} % SU blue (secondary)
+#+latex_header: \setbeamercolor{palette primary}{bg=SUred,fg=white}
+#+latex_header: \setbeamercolor{palette secondary}{bg=SUblue,fg=white}
+#+latex_header: \setbeamercolor{palette tertiary}{bg=SUblue,fg=white}
+#+latex_header: \setbeamercolor{palette quaternary}{bg=SUblue,fg=white}
+#+latex_header: \setbeamercolor{structure}{fg=SUblue} % itemize, enumerate, etc
+#+latex_header: \setbeamercolor{section in toc}{fg=SUblue} % TOC sections
+#+latex_header: % Override palette coloring with secondary
+#+latex_header: \setbeamercolor{subsection in head/foot}{bg=SUblue,fg=white}
+#+latex_header: \setbeamercolor{date in head/foot}{bg=SUblue,fg=white}
+#+latex_header: \institute[SU]{Shenandoah University}
+#+latex_header: \titlegraphic{\includegraphics[width=0.5\textwidth]{\string~/Documents/suLogo/suLogo.pdf}}
+#+latex_header: \newcommand{\R}{\mathbb{R}}
+#+latex_header: \usepackage{tikz}
+
+* Announcements
+** Announcements
+1. Homework in MyOpenMath!
+2. Office hours, 10am - 11am.
+   
+* Lecture
+** The Unit Circle
+*** Definitions                                                   :B_block:
+:PROPERTIES:
+:BEAMER_env: block
+:END:
+- Unit Circle
+
+
+***                                                       :B_ignoreheading:
+:PROPERTIES:
+:BEAMER_env: ignoreheading
+:END:
+#+begin_export latex
+\begin{tikzpicture}[scale=2]
+  \draw[help lines,step=0.25] (-1.1,-1.1) grid (1.1,1.1);
+  \draw[->] (-1.1,0) -- (1.1,0) node[anchor=west] {$x$};
+  \draw[->] (0,-1.1) -- (0,1.1) node[anchor=south] {$y$};
+  \draw (0,0) circle [radius=1];
+  \node at (1,0) [anchor=north west] {$(1,0)$};
+  \fill[color=red] (1,0) circle [radius=1pt];
+  \node at (0,1) [anchor=south west] {$(0,1)$};
+  \fill[color=red] (0,1) circle [radius=1pt];
+  \node at (0,-1) [anchor=north west] {$(0,-1)$};
+  \fill[color=red] (0,-1) circle [radius=1pt];
+  \node at (-1,0) [anchor=south east] {$(-1,0)$};
+  \fill[color=red] (-1,0) circle [radius=1pt];
+  \draw[color=black] (0,0) -- (55:1);
+  \draw (0,0) -- (0.3,0)  arc [start angle = 0, end angle=55, radius=0.3];
+  \fill[color=red] (55:1) circle [radius=1pt];
+  \draw[color=blue,thick] (0,0) -- (55:1 |- 0,0);
+  \draw[color=red,thick] (0,0) ++(55:1) -- (55:1 |- 0,0);
+\end{tikzpicture}
+#+end_export
+
+** The Unit Circle
+
+*** Definitions                                                   :B_block:
+:PROPERTIES:
+:BEAMER_env: block
+:END:
+
+If \(\theta\) is an angle measure and \(\left( x,y \right)\) is the
+point on the unit circle corresponding to an angle of \(\theta\), then
+\vspace{0.2in}
+
+***                                                       :B_ignoreheading:
+:PROPERTIES:
+:BEAMER_env: ignoreheading
+:END:
+#+begin_export latex
+\begin{tikzpicture}[scale=2]
+  \draw[help lines,step=0.25] (-1.1,-1.1) grid (1.1,1.1);
+  \draw[->] (-1.1,0) -- (1.1,0) node[anchor=west] {$x$};
+  \draw[->] (0,-1.1) -- (0,1.1) node[anchor=south] {$y$};
+  \draw (0,0) circle [radius=1];
+  \node at (1,0) [anchor=north west] {$(1,0)$};
+  \fill[color=red] (1,0) circle [radius=1pt];
+  \node at (0,1) [anchor=south west] {$(0,1)$};
+  \fill[color=red] (0,1) circle [radius=1pt];
+  \node at (0,-1) [anchor=north west] {$(0,-1)$};
+  \fill[color=red] (0,-1) circle [radius=1pt];
+  \node at (-1,0) [anchor=south east] {$(-1,0)$};
+  \fill[color=red] (-1,0) circle [radius=1pt];
+  \draw (30:-1) -- (30:1);
+  \draw (45:-1) -- (45:1);
+  \draw (60:-1) -- (60:1);
+  \draw (-30:-1) -- (-30:1);
+  \draw (-45:-1) -- (-45:1);
+  \draw (-60:-1) -- (-60:1);
+\end{tikzpicture}
+#+end_export
+
+** The Pythagorean Identity
+
+*** Definitions                                                   :B_block:
+:PROPERTIES:
+:BEAMER_env: block
+:END:
+- Pythagorean identity
+
+
+***                                                       :B_ignoreheading:
+:PROPERTIES:
+:BEAMER_env: ignoreheading
+:END:
+#+begin_export latex
+\begin{tikzpicture}[scale=2]
+  \draw[help lines,step=0.25] (-1.1,-1.1) grid (1.1,1.1);
+  \draw[->] (-1.1,0) -- (1.1,0) node[anchor=west] {$x$};
+  \draw[->] (0,-1.1) -- (0,1.1) node[anchor=south] {$y$};
+  \draw (0,0) circle [radius=1];
+  \node at (1,0) [anchor=north west] {$(1,0)$};
+  \fill[color=red] (1,0) circle [radius=1pt];
+  \node at (0,1) [anchor=south west] {$(0,1)$};
+  \fill[color=red] (0,1) circle [radius=1pt];
+  \node at (0,-1) [anchor=north west] {$(0,-1)$};
+  \fill[color=red] (0,-1) circle [radius=1pt];
+  \node at (-1,0) [anchor=south east] {$(-1,0)$};
+  \fill[color=red] (-1,0) circle [radius=1pt];
+  \draw[color=black] (0,0) -- (55:1);
+  \draw (0,0) -- (0.3,0)  arc [start angle = 0, end angle=55, radius=0.3];
+  \fill[color=red] (55:1) circle [radius=1pt];
+  \draw[color=blue,thick] (0,0) -- (55:1 |- 0,0);
+  \draw[color=red,thick] (0,0) ++(55:1) -- (55:1 |- 0,0);
+\end{tikzpicture}
+#+end_export
+
+** Example
+Suppose \(0 \le \theta \le \pi/2\) and \(\sin(\theta) = \frac{3}{5}\).  What is
+\(\cos(\theta)\)?
+
+\vspace{10in}
+
+** Example
+Suppose \(\pi \le \theta \le \frac{3\pi}{2}\) and \(\cos(\theta) = -\frac{1}{8}.\) What is
+\(\sin(\theta)\)?
+
+\vspace{10in}

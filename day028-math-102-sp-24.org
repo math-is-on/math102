@@ -1,0 +1,78 @@
+#+title: General Parabolas
+#+author: Chase Mathison
+#+date: 29 April 2024
+#+email: cmathiso@su.edu
+#+options: H:2 ':t ::t <:t email:t text:t todo:nil toc:nil 
+#+startup: showall
+#+startup: indent
+#+startup: hidestars
+#+startup: beamer
+#+latex_class: beamer
+#+latex_class_options: [presentation]
+#+COLUMNS: %40ITEM %10BEAMER_env(Env) %9BEAMER_envargs(Env Args) %5BEAMER_act(Act) %4BEAMER_col(Col) %10BEAMER_extra(Extra)
+#+latex_header: \mode<beamer>{\usetheme{Madrid}}
+#+latex_header: \definecolor{SUred}{rgb}{0.59375, 0, 0.17969} % SU red (primary)
+#+latex_header: \definecolor{SUblue}{rgb}{0, 0.17578, 0.38281} % SU blue (secondary)
+#+latex_header: \setbeamercolor{palette primary}{bg=SUred,fg=white}
+#+latex_header: \setbeamercolor{palette secondary}{bg=SUblue,fg=white}
+#+latex_header: \setbeamercolor{palette tertiary}{bg=SUblue,fg=white}
+#+latex_header: \setbeamercolor{palette quaternary}{bg=SUblue,fg=white}
+#+latex_header: \setbeamercolor{structure}{fg=SUblue} % itemize, enumerate, etc
+#+latex_header: \setbeamercolor{section in toc}{fg=SUblue} % TOC sections
+#+latex_header: % Override palette coloring with secondary
+#+latex_header: \setbeamercolor{subsection in head/foot}{bg=SUblue,fg=white}
+#+latex_header: \setbeamercolor{date in head/foot}{bg=SUblue,fg=white}
+#+latex_header: \institute[SU]{Shenandoah University}
+#+latex_header: \titlegraphic{\includegraphics[width=0.5\textwidth]{\string~/Documents/suLogo/suLogo.pdf}}
+#+latex_header: \newcommand{\R}{\mathbb{R}}
+#+latex_header: \usepackage{tikz}
+#+latex_header: \usepackage{pgfplots}
+
+* Announcements
+** Announcements
+1. Homework in MyOpenMath due tonight.
+2. Exam next week (old exam available in Canvas).
+3. Friday's class will be on Thursday this week.
+
+* Lecture
+** General Parabolas
+Let's work out the formula for a general parabola with a vertex at \((h,k)\).
+
+#+begin_export latex
+\includegraphics{./general_parabola}
+#+end_export
+
+** General Parabolas
+
+** Some Information
+
+#+begin_export latex
+\includegraphics[width=0.9\textwidth]{./parabs_gen}
+#+end_export
+
+** Example
+
+Write the equation and graph a parabola that has a focus at \( \left(
+1,3 \right)\) and a directrix of \(y = -1.\)
+
+#+begin_export latex
+\includegraphics[scale=0.9]{./blank_grid}
+#+end_export
+
+** Example
+
+What are the focus, directrix and vertex for the parabola with equation
+\[
+y = \frac{x^2}{4}+\frac{5x}{2}+\frac{13}{4}?\]
+
+\vspace{10in}
+
+** Applications of Parabolas
+
+** Example
+
+#+begin_export latex
+\includegraphics[width=0.8\textwidth]{./applied_parab}
+#+end_export
+
+** Example

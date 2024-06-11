@@ -1,0 +1,124 @@
+#+title: Inverse Trig Functions
+#+author: Chase Mathison
+#+date: 6 March 2024
+#+email: cmathiso@su.edu
+#+options: H:2 ':t ::t <:t email:t text:t todo:nil toc:nil 
+#+startup: showall
+#+startup: indent
+#+startup: hidestars
+#+startup: beamer
+#+latex_class: beamer
+#+latex_class_options: [presentation]
+#+COLUMNS: %40ITEM %10BEAMER_env(Env) %9BEAMER_envargs(Env Args) %5BEAMER_act(Act) %4BEAMER_col(Col) %10BEAMER_extra(Extra)
+#+latex_header: \mode<beamer>{\usetheme{Madrid}}
+#+latex_header: \definecolor{SUred}{rgb}{0.59375, 0, 0.17969} % SU red (primary)
+#+latex_header: \definecolor{SUblue}{rgb}{0, 0.17578, 0.38281} % SU blue (secondary)
+#+latex_header: \setbeamercolor{palette primary}{bg=SUred,fg=white}
+#+latex_header: \setbeamercolor{palette secondary}{bg=SUblue,fg=white}
+#+latex_header: \setbeamercolor{palette tertiary}{bg=SUblue,fg=white}
+#+latex_header: \setbeamercolor{palette quaternary}{bg=SUblue,fg=white}
+#+latex_header: \setbeamercolor{structure}{fg=SUblue} % itemize, enumerate, etc
+#+latex_header: \setbeamercolor{section in toc}{fg=SUblue} % TOC sections
+#+latex_header: % Override palette coloring with secondary
+#+latex_header: \setbeamercolor{subsection in head/foot}{bg=SUblue,fg=white}
+#+latex_header: \setbeamercolor{date in head/foot}{bg=SUblue,fg=white}
+#+latex_header: \institute[SU]{Shenandoah University}
+#+latex_header: \titlegraphic{\includegraphics[width=0.5\textwidth]{\string~/Documents/suLogo/suLogo.pdf}}
+#+latex_header: \newcommand{\R}{\mathbb{R}}
+#+latex_header: \usepackage{tikz}
+
+* Announcements
+** Announcements
+1. Homework in MyOpenMath
+2. Exam 2 Friday after Spring Break.
+
+* Lecture
+** Inverse Trigonometric Functions
+The main question we want to answer today is this:  What is the angle \(\theta\) in the following right triangle?
+
+#+begin_export latex
+\begin{tikzpicture}[scale=0.9]
+  \draw (0,0) -- node[below] {$3$} (3,0) -- node[right] {$4$} (3,4) -- cycle;
+  \draw (0.5,0) arc (0:53.13:0.5);
+  \node[right] at (40:0.5) {$\theta$};
+  \draw (3,0) rectangle ++(-0.3,0.3);
+\end{tikzpicture}
+#+end_export
+
+Certainly we can find \(\sin(\theta), \cos(\theta)\) and
+\(\tan(\theta)\), but how can we say what \(\theta\) is if we know
+those values?
+
+** Let's go to a graph!
+
+Let's go look at a graph of \(\sin(\theta)\) to see if we can answer
+the question on the previous slide.
+
+** Inverse Functions
+
+Let's talk about general functions for a second:
+\vspace{10in}
+
+** The need for restrictions
+
+So, in order for a function to have an inverse, that function needs to be one-to-one.
+
+Question: Are any of the trig functions one-to-one?
+
+So apparently we need to make a _\hspace*{1in}_ on the domain of the
+trig functions to turn them into one-to-one functions.  Let's look at
+how that's *typically* done.
+
+** Desmos!
+
+** Notation
+
+The inverse function of the function \(f(x) = \sin(x)\) that has
+domain \( \left[ - \frac{\pi}{2},\frac{\pi}{2} \right]\) is the
+function \(f^{-1}(x) = \) _\hspace*{1in}_.  This function has a domain
+that is identical to the range of \(\sin(x)\).  Similarly, the range
+of \(\arcsin(x)\) is the domain of our restricted \(\sin\) function,
+so _\hspace*{1in}_.
+
+** Example
+
+Let's take a second and think how we can restrict the domain of
+\(\cos(x)\)to turn it into a one-to-one function.  Then do the same
+with \(\tan(x).\)
+
+\vspace{10in}
+
+** Example
+
+Find
+1. \(\arcsin \left( \frac{1}{2} \right)\)
+2. \(\arcsin \left( - \frac{\sqrt{2}}{2} \right)\)
+3. \(\arccos \left( \frac{1}{2} \right)\)
+4. \(\arctan \left( 1 \right)\).
+
+\vspace{10in}
+
+** Example
+
+Given that \(\sin \left( \frac{\pi}{12} \right) =
+\frac{\sqrt{2-\sqrt{3}}}{2},\) write a relation involving inverse
+sine.
+
+\vspace{10in}
+
+** Example
+
+Now let's see how we can use a calculator to answer the question that we opened class with:
+
+What is the angle \(\theta\) in the following right triangle?
+
+#+begin_export latex
+\begin{tikzpicture}[scale=0.9]
+  \draw (0,0) -- node[below] {$3$} (3,0) -- node[right] {$4$} (3,4) -- cycle;
+  \draw (0.5,0) arc (0:53.13:0.5);
+  \node[right] at (40:0.5) {$\theta$};
+  \draw (3,0) rectangle ++(-0.3,0.3);
+\end{tikzpicture}
+#+end_export
+
+\vspace{10in}

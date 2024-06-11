@@ -1,0 +1,88 @@
+#+title: Applications of Parabolas
+#+author: Chase Mathison
+#+date: 2 May 2024
+#+email: cmathiso@su.edu
+#+options: H:2 ':t ::t <:t email:t text:t todo:nil toc:nil 
+#+startup: showall
+#+startup: indent
+#+startup: hidestars
+#+startup: beamer
+#+latex_class: beamer
+#+latex_class_options: [presentation]
+#+COLUMNS: %40ITEM %10BEAMER_env(Env) %9BEAMER_envargs(Env Args) %5BEAMER_act(Act) %4BEAMER_col(Col) %10BEAMER_extra(Extra)
+#+latex_header: \mode<beamer>{\usetheme{Madrid}}
+#+latex_header: \definecolor{SUred}{rgb}{0.59375, 0, 0.17969} % SU red (primary)
+#+latex_header: \definecolor{SUblue}{rgb}{0, 0.17578, 0.38281} % SU blue (secondary)
+#+latex_header: \setbeamercolor{palette primary}{bg=SUred,fg=white}
+#+latex_header: \setbeamercolor{palette secondary}{bg=SUblue,fg=white}
+#+latex_header: \setbeamercolor{palette tertiary}{bg=SUblue,fg=white}
+#+latex_header: \setbeamercolor{palette quaternary}{bg=SUblue,fg=white}
+#+latex_header: \setbeamercolor{structure}{fg=SUblue} % itemize, enumerate, etc
+#+latex_header: \setbeamercolor{section in toc}{fg=SUblue} % TOC sections
+#+latex_header: % Override palette coloring with secondary
+#+latex_header: \setbeamercolor{subsection in head/foot}{bg=SUblue,fg=white}
+#+latex_header: \setbeamercolor{date in head/foot}{bg=SUblue,fg=white}
+#+latex_header: \institute[SU]{Shenandoah University}
+#+latex_header: \titlegraphic{\includegraphics[width=0.5\textwidth]{\string~/Documents/suLogo/suLogo.pdf}}
+#+latex_header: \newcommand{\R}{\mathbb{R}}
+#+latex_header: \usepackage{tikz}
+#+latex_header: \usepackage{pgfplots}
+
+* Announcements
+** Announcements
+1. Exam on Monday.
+2. Homework in MyOpenMath due Wednesday of next week.
+3. Office hours today 10am - 11am (No office hours tomorrow).
+
+* Lecture
+** Applications of Parabolas
+A car's headlights are shaped as parabolic reflectors with the actual light at the focus of the parabola.
+
+1. Why do you think this is the case?
+
+
+\vspace{10in}
+
+** Example
+
+A car manufacturer wants to make the headlights of a car such that the
+actual light for the headlight is at a distance of 4 inches from the
+reflector.  What is the equation of the parabola that models this
+headlight, assuming the vertex of the parabola is at the origin?
+
+#+begin_export latex
+\includegraphics{./carlight}
+#+end_export
+\vspace{10in}
+
+** Example
+
+** Example
+A satellite dish is shaped like a paraboloid of revolution. This means
+that it can be formed by rotating a parabola around its axis of
+symmetry. The receiver is to be located at the focus. If the dish is
+12 feet across at its opening and 4 feet deep at its center, where
+should the receiver be placed?
+
+\vspace{10in}
+
+** Example
+
+** Example
+One more application of parabolas is projectile motion.  If we throw
+an object straight into the air with an initial velocity of \(v_0\)
+feet per second and from a height of \(h\) feet above ground level, it
+can be shown using physics that the equation that tells you the height
+of the object (in feet) after \(t\) seconds is
+
+\[s(t) = -16t^2 + v_0 t + h\]
+\vspace{10in}
+
+** Example
+You throw a ball straight into the air (from the ground) with an
+initial velocity of 80 feet per second.  What is the maximum height
+that the ball attains?
+
+\vspace{10in}
+
+** Example

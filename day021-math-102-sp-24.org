@@ -1,0 +1,133 @@
+#+title: Law of Sines
+#+author: Chase Mathison
+#+date: 5 April 2024
+#+email: cmathiso@su.edu
+#+options: H:2 ':t ::t <:t email:t text:t todo:nil toc:nil 
+#+startup: showall
+#+startup: indent
+#+startup: hidestars
+#+startup: beamer
+#+latex_class: beamer
+#+latex_class_options: [presentation]
+#+COLUMNS: %40ITEM %10BEAMER_env(Env) %9BEAMER_envargs(Env Args) %5BEAMER_act(Act) %4BEAMER_col(Col) %10BEAMER_extra(Extra)
+#+latex_header: \mode<beamer>{\usetheme{Madrid}}
+#+latex_header: \definecolor{SUred}{rgb}{0.59375, 0, 0.17969} % SU red (primary)
+#+latex_header: \definecolor{SUblue}{rgb}{0, 0.17578, 0.38281} % SU blue (secondary)
+#+latex_header: \setbeamercolor{palette primary}{bg=SUred,fg=white}
+#+latex_header: \setbeamercolor{palette secondary}{bg=SUblue,fg=white}
+#+latex_header: \setbeamercolor{palette tertiary}{bg=SUblue,fg=white}
+#+latex_header: \setbeamercolor{palette quaternary}{bg=SUblue,fg=white}
+#+latex_header: \setbeamercolor{structure}{fg=SUblue} % itemize, enumerate, etc
+#+latex_header: \setbeamercolor{section in toc}{fg=SUblue} % TOC sections
+#+latex_header: % Override palette coloring with secondary
+#+latex_header: \setbeamercolor{subsection in head/foot}{bg=SUblue,fg=white}
+#+latex_header: \setbeamercolor{date in head/foot}{bg=SUblue,fg=white}
+#+latex_header: \institute[SU]{Shenandoah University}
+#+latex_header: \titlegraphic{\includegraphics[width=0.5\textwidth]{\string~/Documents/suLogo/suLogo.pdf}}
+#+latex_header: \newcommand{\R}{\mathbb{R}}
+#+latex_header: \usepackage{tikz}
+#+latex_header: \usepackage{pgfplots}
+#+latex_header: \usetikzlibrary{calc}
+* Announcements
+** Announcements
+1. Exam corrections due next Wednesday.
+2. Homework in M.O.M.
+3. Office hours today, 10am - 11am.
+
+* Lecture
+** A few more advanced trig equation techniques
+Let's illustrate a few more "advanced" techniques for trig equations with the following examples on the interval \( 0 \le \theta < 2\pi\):
+1. \(2\sin^2(\theta) + \cos(\theta) = 2\)
+2. \(2\sin(3\theta) = 1 \)
+
+\vspace{10in}
+
+** Example
+
+** Law of Sines
+
+Let's look at a general _\hspace*{1in}_ and see what we can say about
+it using right angle trigonometry.  We want to _\hspace*{1in}_ this
+oblique triangle, which means finding all 3 _\hspace*{1in}_ and all 3 _\hspace*{1in}_.
+
+#+begin_export latex
+\begin{center}
+\begin{tikzpicture}[scale=1.5]
+  \node[left] at (0,0) {$A$};
+  \node[right] at (3,0) {$B$};
+  \node[above] at (2,2) {$C$};
+  \draw (0,0) -- node[below] {$c$} (3,0) -- node[right] {$a$} (2,2) -- node[left] {$b$} cycle;
+\end{tikzpicture}
+\end{center}
+#+end_export
+
+\vspace{10in}
+** Law of Sines
+
+We've just developed the Law of Sines!
+
+*** Law of Sines                                                :B_theorem:
+:PROPERTIES:
+:BEAMER_env: theorem
+:END:
+In any triangle with angles \(A,B,C\) and corresponding side lengths \(a,b,c\), we will always have:
+\[
+\frac{\sin(A)}{a} = \frac{\sin(B)}{b} = \frac{\sin(C)}{c}\]
+
+***                                                       :B_ignoreheading:
+:PROPERTIES:
+:BEAMER_env: ignoreheading
+:END:
+Let's look at a few particular examples of how to use this!
+** ASA
+#+begin_export latex
+\begin{center}
+\begin{tikzpicture}[scale=1.5]
+  \node[left] at (0,0) {$A$};
+  \draw (0,0) -- ++(.2,0) arc (0:45:0.2);
+  \node[right] at (45:0.2) {$45^{\circ}$};
+  \node[right] at (3,0) {$B$};
+  \draw (3,0) -- ++(-0.2,0) arc (180:116.57:0.2);
+  \path (3,0) -- ++(130:0.2) node[left] {$63.43^{\circ}$};
+  \node[above] at (2,2) {$C$};
+  \draw (0,0) -- node[below] {$3$} (3,0) -- (2,2) -- cycle;
+\end{tikzpicture}
+\end{center}
+#+end_export
+
+\vspace{10in}
+
+** AAS
+
+#+begin_export latex
+\begin{center}
+  \begin{tikzpicture}[scale=2]
+    \draw (0,0) coordinate (A) -- ++(50:2) coordinate (B) -- ++(-20:3) coordinate (C) -- cycle;
+    \path (A) -- (B) -- node[above right] {$3$} (C);
+    \draw[bend left] ($(A)!.1!(B)$) to node[above right] {$42.97^{\circ}$} ($(A)!.05!(C)$);
+    \draw[bend right] ($(B)!.1!(A)$) to node[below] {$110^{\circ}$} ($(B)!.08!(C)$);
+  \end{tikzpicture}
+\end{center}
+#+end_export
+
+\vspace{10in}
+
+** SSA
+
+#+begin_export latex
+\begin{center}
+  \begin{tikzpicture}[scale=0.8]
+    \draw (0,0) coordinate (A) -- node[above left] {$8$} ++(35:8) coordinate (B) -- node[right] {$6$} ++(-130.1:6) coordinate (C) -- cycle;
+    \draw (A) -- ++(0.5,0) arc (0:35:0.5);
+    \node[right] at (25:0.5) {$35^{\circ}$};
+  \end{tikzpicture}
+\end{center}
+#+end_export
+
+\vspace{10in}
+
+** Examples
+
+#+begin_export latex
+\includegraphics[height=0.8\textheight,trim=0in 0.6in 0in 1in, clip]{../trigStar.pdf}
+#+end_export

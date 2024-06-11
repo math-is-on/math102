@@ -1,0 +1,163 @@
+#+title: Trigonometric Identities
+#+author: Chase Mathison
+#+date: 18 March 2024
+#+email: cmathiso@su.edu
+#+options: H:2 ':t ::t <:t email:t text:t todo:nil toc:nil 
+#+startup: showall
+#+startup: indent
+#+startup: hidestars
+#+startup: beamer
+#+latex_class: beamer
+#+latex_class_options: [presentation]
+#+COLUMNS: %40ITEM %10BEAMER_env(Env) %9BEAMER_envargs(Env Args) %5BEAMER_act(Act) %4BEAMER_col(Col) %10BEAMER_extra(Extra)
+#+latex_header: \mode<beamer>{\usetheme{Madrid}}
+#+latex_header: \definecolor{SUred}{rgb}{0.59375, 0, 0.17969} % SU red (primary)
+#+latex_header: \definecolor{SUblue}{rgb}{0, 0.17578, 0.38281} % SU blue (secondary)
+#+latex_header: \setbeamercolor{palette primary}{bg=SUred,fg=white}
+#+latex_header: \setbeamercolor{palette secondary}{bg=SUblue,fg=white}
+#+latex_header: \setbeamercolor{palette tertiary}{bg=SUblue,fg=white}
+#+latex_header: \setbeamercolor{palette quaternary}{bg=SUblue,fg=white}
+#+latex_header: \setbeamercolor{structure}{fg=SUblue} % itemize, enumerate, etc
+#+latex_header: \setbeamercolor{section in toc}{fg=SUblue} % TOC sections
+#+latex_header: % Override palette coloring with secondary
+#+latex_header: \setbeamercolor{subsection in head/foot}{bg=SUblue,fg=white}
+#+latex_header: \setbeamercolor{date in head/foot}{bg=SUblue,fg=white}
+#+latex_header: \institute[SU]{Shenandoah University}
+#+latex_header: \titlegraphic{\includegraphics[width=0.5\textwidth]{\string~/Documents/suLogo/suLogo.pdf}}
+#+latex_header: \newcommand{\R}{\mathbb{R}}
+
+* Announcements
+** Announcements
+1. Homework in M.O.M.
+2. Exam 2 on Friday.
+
+* Lecture
+** Verifying Trigonometric Identities
+Today we're going to talk about how to verify trig identities.  Let's start with an example:
+
+We want to /verify/ that
+\[
+\sin(x)\sec(x) = \tan(x)\]
+
+Let's see how we do that:
+\vspace{10in}
+
+** Verifying Trigonometric Identities
+
+** Basic Principals of Verifying Trig Identities
+
+Here are 4 basic principals for verifying trig identities:
+1. Always work on only one side of the equation.  Try to work on the most _\hspace*{1in}_ side. (It's easier to _\hspace*{1in}_ than to build)
+2. Look for opportunities to _\hspace*{1in}_, _\hspace*{1in}_ or add _\hspace*{1in}_.
+3. Note which functions are in the final expression, and look for opportunities to make appropriate _\hspace*{1in}_.
+4. If all else fails, try changing everything to _\hspace*{1in}_ and _\hspace*{1in}_.
+
+** Fundamental Identities
+The following are fundamental identities that you can take for granted when trying to verify other trig identities:
+
+*** Pythagorean Identities                                        :B_block:
+:PROPERTIES:
+:BEAMER_env: block
+:END:
+
+\[\sin^2 \left( x \right) + \cos^2 \left( x \right) = \]
+
+\[
+\tan^2(x) + 1 = \]
+
+\[
+1 + \cot^2(x) = \]
+
+
+*** Even/Odd identities                                           :B_block:
+:PROPERTIES:
+:BEAMER_env: block
+:END:
+1. \(\sin(-x) = \)
+2. \(\cos(-x) = \)
+3. \(\tan(-x) = \)
+4. \(\csc(-x) = \)
+5. \(\sec(-x) = \)
+6. \(\cot(-x) = \)
+
+** Fundamental Identities
+
+*** Recipricol Identities                                         :B_block:
+:PROPERTIES:
+:BEAMER_env: block
+:END:
+
+1. \(\csc(x) = \)
+2. \(\sec(x) = \)
+3. \(\cot(x) = \)
+
+*** Quotient Identities                                           :B_block:
+:PROPERTIES:
+:BEAMER_env: block
+:END:
+
+1. \(\tan(x) = \)
+2. \(\cot(x) = \)
+
+
+** Example
+Let's verify another trig identity:
+
+\[
+\frac{\sin(x)}{\tan(x)} = \cos(x)
+\]
+
+\vspace{10in}
+** Example
+
+** Example
+Verify that
+\[
+\csc(x)\cos(x)\tan(x) = 1\]
+\vspace{10in}
+** Example
+
+** Example
+Verify
+\[
+\left( 1+\sin(x) \right) \left( 1 + \sin(-x) \right) = \cos^2(x)\]
+\vspace{10in}
+
+** Example
+
+** Example
+
+Verify
+\[
+\sin(x) \cos(x) + \sin^2(x) \tan(x) = \tan(x)\]
+
+\vspace{10in}
+
+** Example
+
+** Example
+
+Verify \[ \frac{\sin^2(x) - \cos^2(x)}{\sin(x) - \cos(x)} = \sin(x) +
+\cos(x).\]
+
+\vspace{10in}
+
+** Example
+
+** Example
+One more!
+
+Verify
+\[
+\frac{\cos(x)}{1+\sin(x)} = \frac{1 - \sin(x)}{\cos(x)}\]
+
+\vspace{10in}
+
+** Example
+
+** Example
+
+How can we see a claimed identity is false?  For example: Is it true that
+\[
+\sin(2x) = 2\sin(x)?\]
+\vspace{10in}

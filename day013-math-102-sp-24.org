@@ -1,0 +1,59 @@
+#+title: Modeling with Sinusoidal Functions
+#+author: Chase Mathison
+#+date: 21 February 2024
+#+email: cmathiso@su.edu
+#+options: H:2 ':t ::t <:t email:t text:t todo:nil toc:nil 
+#+startup: showall
+#+startup: indent
+#+startup: hidestars
+#+startup: beamer
+#+latex_class: beamer
+#+latex_class_options: [presentation]
+#+COLUMNS: %40ITEM %10BEAMER_env(Env) %9BEAMER_envargs(Env Args) %5BEAMER_act(Act) %4BEAMER_col(Col) %10BEAMER_extra(Extra)
+#+latex_header: \mode<beamer>{\usetheme{Madrid}}
+#+latex_header: \definecolor{SUred}{rgb}{0.59375, 0, 0.17969} % SU red (primary)
+#+latex_header: \definecolor{SUblue}{rgb}{0, 0.17578, 0.38281} % SU blue (secondary)
+#+latex_header: \setbeamercolor{palette primary}{bg=SUred,fg=white}
+#+latex_header: \setbeamercolor{palette secondary}{bg=SUblue,fg=white}
+#+latex_header: \setbeamercolor{palette tertiary}{bg=SUblue,fg=white}
+#+latex_header: \setbeamercolor{palette quaternary}{bg=SUblue,fg=white}
+#+latex_header: \setbeamercolor{structure}{fg=SUblue} % itemize, enumerate, etc
+#+latex_header: \setbeamercolor{section in toc}{fg=SUblue} % TOC sections
+#+latex_header: % Override palette coloring with secondary
+#+latex_header: \setbeamercolor{subsection in head/foot}{bg=SUblue,fg=white}
+#+latex_header: \setbeamercolor{date in head/foot}{bg=SUblue,fg=white}
+#+latex_header: \institute[SU]{Shenandoah University}
+#+latex_header: \titlegraphic{\includegraphics[width=0.5\textwidth]{\string~/Documents/suLogo/suLogo.pdf}}
+#+latex_header: \newcommand{\R}{\mathbb{R}}
+
+* Announcements
+** Announcements
+1. Exam on Friday
+2. Review in MEC from 12 to 1 today.
+3. Office hours, 10am - 11am.
+
+* Lecture
+** Modeling with Sinusoidal Functions
+Let's finish up that example from last class: Model the number of
+hours of sunlight in a day \(t\) days after January 1.
+\vspace{10in}
+
+** The basics of modeling with Sinusoidal Functions
+
+Anytime we are modeling a real world situation that is
+_\hspace*{1in}_, sinusoidal functions are what we use.  If we're trying to fit real world periodic data to a sinusoidal function, we need to know:
+
+1. 
+2. 
+3. 
+4. 
+
+** Example
+Let's model the average monthly temperature in Winchester, VA using
+the information in the Google Sheets doc linked in Canvas.
+
+\vspace{10in}
+
+** Example
+
+

@@ -1,0 +1,265 @@
+#+title: Precalculus!
+#+author: Chase Mathison
+#+date: 22 January 2024
+#+email: cmathiso@su.edu
+#+options: H:2 ':t ::t <:t email:t text:t todo:nil toc:nil 
+#+startup: showall
+#+startup: indent
+#+startup: hidestars
+#+startup: beamer
+#+latex_class: beamer
+#+latex_class_options: [presentation]
+#+COLUMNS: %40ITEM %10BEAMER_env(Env) %9BEAMER_envargs(Env Args) %5BEAMER_act(Act) %4BEAMER_col(Col) %10BEAMER_extra(Extra)
+#+latex_header: \mode<beamer>{\usetheme{Madrid}}
+#+latex_header: \definecolor{SUred}{rgb}{0.59375, 0, 0.17969} % SU red (primary)
+#+latex_header: \definecolor{SUblue}{rgb}{0, 0.17578, 0.38281} % SU blue (secondary)
+#+latex_header: \setbeamercolor{palette primary}{bg=SUred,fg=white}
+#+latex_header: \setbeamercolor{palette secondary}{bg=SUblue,fg=white}
+#+latex_header: \setbeamercolor{palette tertiary}{bg=SUblue,fg=white}
+#+latex_header: \setbeamercolor{palette quaternary}{bg=SUblue,fg=white}
+#+latex_header: \setbeamercolor{structure}{fg=SUblue} % itemize, enumerate, etc
+#+latex_header: \setbeamercolor{section in toc}{fg=SUblue} % TOC sections
+#+latex_header: % Override palette coloring with secondary
+#+latex_header: \setbeamercolor{subsection in head/foot}{bg=SUblue,fg=white}
+#+latex_header: \setbeamercolor{date in head/foot}{bg=SUblue,fg=white}
+#+latex_header: \institute[SU]{Shenandoah University}
+#+latex_header: \titlegraphic{\includegraphics[width=0.5\textwidth]{\string~/Documents/suLogo/suLogo.pdf}}
+#+latex_header: \newcommand{\R}{\mathbb{R}}
+#+latex_header: \usepackage{tikz}
+
+* Announcements
+** Announcements
+1. Welcome to Precalculus!
+2. My office hours this semester: M - F, 10am - 11am in Howe 113
+3. Let's do some introductions!
+   
+* Lecture
+** Canvas
+Let's go explore in Canvas for a few minutes before we dive into some
+material.
+
+** What is an angle?
+
+** Drawing an angle
+
+*** Terminology                                              :B_definition:
+:PROPERTIES:
+:BEAMER_env: definition
+:END:
+- Ray
+- Angle  
+- Vertex
+- Initial side
+- Terminal Side
+
+***                                                       :B_ignoreheading:
+:PROPERTIES:
+:BEAMER_env: ignoreheading
+:END:
+\vspace{10in}
+
+** The Measure of an Angle
+*** Terminology                                              :B_definition:
+:PROPERTIES:
+:BEAMER_env: definition
+:END:
+- Measure of an angle
+- Degree
+***                                                       :B_ignoreheading:
+:PROPERTIES:
+:BEAMER_env: ignoreheading
+:END:
+\vspace{10in}
+
+** Standard Position
+*** Standard Position for an Angle                           :B_definition:
+:PROPERTIES:
+:BEAMER_env: definition
+:END:
+An angle is in "Standard Position" if the initial side lines up with the positive _\hspace*{1in}_,
+and the vertex is at the _\hspace*{1in}_ in the \(xy\) plane.
+
+***                                                       :B_ignoreheading:
+:PROPERTIES:
+:BEAMER_env: ignoreheading
+:END:
+\vspace{10in}
+** Example
+
+Sketch the following angles in standard position:
+1. \(45^{\circ}\)
+2. \(120^{\circ}\)
+3. \(-135^{\circ}\)
+
+#+begin_export latex
+\begin{tikzpicture}
+  \draw[step=0.375,help lines](-1.9,-1.9) grid (1.9,1.9);
+  \draw[->] (-2,0) -- (2,0) node[anchor=west] {$x$};
+  \draw[->] (0,-2) -- (0,2) node[anchor=south] {$y$};
+\end{tikzpicture}
+#+end_export
+
+\vspace{10in}
+
+** Radians!
+Degrees are what you're most familiar with to measure an angle, but
+the choice of having 360\(^{\circ}\) in a full circular rotation is _\hspace*{1in}_.
+
+A more natural way to measure an angle is to use _\hspace*{1in}_.
+
+#+begin_export latex
+\begin{tikzpicture}
+  \draw[step=0.375,help lines](-1.9,-1.9) grid (1.9,1.9);
+  \draw[->] (-2,0) -- (2,0) node[anchor=west] {$x$};
+  \draw[->] (0,-2) -- (0,2) node[anchor=south] {$y$};
+  \draw (0,0) circle [radius=1.5];
+\end{tikzpicture}
+#+end_export
+
+\vspace{10in}
+
+** Converting Between Radians and Degrees
+*** Conversion between Radians and Degrees                      :B_theorem:
+:PROPERTIES:
+:BEAMER_env: theorem
+:END:
+\phantom{hi}
+\[\]
+\phantom{hi}
+
+***                                                       :B_ignoreheading:
+:PROPERTIES:
+:BEAMER_env: ignoreheading
+:END:
+
+\vspace{10in}
+
+** Example
+Convert:
+1. \(25^{\circ}\) to radians
+2. \(\frac{\pi}{3}\) radians to degrees.
+
+\vspace{10in}
+
+** Arc Length and Radius
+As we saw above, an angle of \(\theta\) radians corresponds to a
+fractional turn of \(\theta = \frac{s}{r}\) around a circle.
+
+We can rearrange this then to say that \(s = \) _\hspace*{1in}_.
+
+*** Arc length and radius                                       :B_theorem:
+:PROPERTIES:
+:BEAMER_env: theorem
+:END:
+
+If \(\theta\) is an angle measured in radians, then the arc length
+\(s\) along a circle of radius \(r\) corresponding to an angle of
+\(\theta\) is
+\[s = \hspace{1in}\]
+
+** Using Radians
+The circumference of the earth at the equator is 24,901 miles.  Using
+this, what is the radius of the earth?
+
+\vspace{10in}
+
+** Special Angles in Radians
+
+#+begin_export latex
+\begin{tikzpicture}
+  \draw[step=0.375,help lines](-1.9,-1.9) grid (1.9,1.9);
+  \draw[->] (-2,0) -- (2,0) node[anchor=west] {$x$};
+  \draw[->] (0,-2) -- (0,2) node[anchor=south] {$y$};
+  \draw (0,0) circle [radius=1.5];
+  \draw (-1.3,-0.75) -- (1.3,0.75);
+  \draw (-1.3,0.75) -- (1.3,-0.75);
+  \draw (-1.06,-1.06) -- (1.06,1.06);
+  \draw (-1.06,1.06) -- (1.06,-1.06);
+  \draw (-0.75,-1.3) -- (0.75,1.3);
+  \draw (-0.75,1.3) -- (0.75,-1.3);
+\end{tikzpicture}
+#+end_export
+
+** Coterminal Angles
+*** Coterminal Angles                                        :B_definition:
+:PROPERTIES:
+:BEAMER_env: definition
+:END:
+- Coterminal angles
+
+***                                                       :B_ignoreheading:
+:PROPERTIES:
+:BEAMER_env: ignoreheading
+:END:
+
+#+begin_export latex
+\begin{tikzpicture}
+  \draw[step=0.375,help lines](-1.9,-1.9) grid (1.9,1.9);
+  \draw[->] (-2,0) -- (2,0) node[anchor=west] {$x$};
+  \draw[->] (0,-2) -- (0,2) node[anchor=south] {$y$};
+\end{tikzpicture}
+#+end_export
+
+\vspace{10in}
+
+** Reference Angles
+*** Reference Angle                                          :B_definition:
+:PROPERTIES:
+:BEAMER_env: definition
+:END:
+- Reference Angle
+
+***                                                       :B_ignoreheading:
+:PROPERTIES:
+:BEAMER_env: ignoreheading
+:END:
+
+#+begin_export latex
+\begin{tikzpicture}
+  \draw[step=0.375,help lines](-1.9,-1.9) grid (1.9,1.9);
+  \draw[->] (-2,0) -- (2,0) node[anchor=west] {$x$};
+  \draw[->] (0,-2) -- (0,2) node[anchor=south] {$y$};
+\end{tikzpicture}
+#+end_export
+
+\vspace{10in}
+
+\vspace{10in}
+
+** Examples
+- Find an angle between 0\(^{\circ}\) and \(360^{\circ}\) that is
+  coterminal with the angle \(775^{\circ}\).
+- Find the reference angle associated with the angle \(210^{\circ}\).
+
+#+begin_export latex
+\begin{tikzpicture}
+  \draw[step=0.375,help lines](-1.9,-1.9) grid (1.9,1.9);
+  \draw[->] (-2,0) -- (2,0) node[anchor=west] {$x$};
+  \draw[->] (0,-2) -- (0,2) node[anchor=south] {$y$};
+\end{tikzpicture}
+#+end_export  
+\vspace{10in}
+
+** Coterminal Angles and Reference Angles in Radians
+#+begin_export latex
+\begin{tikzpicture}
+  \draw[step=0.375,help lines](-1.9,-1.9) grid (1.9,1.9);
+  \draw[->] (-2,0) -- (2,0) node[anchor=west] {$x$};
+  \draw[->] (0,-2) -- (0,2) node[anchor=south] {$y$};
+\end{tikzpicture}
+#+end_export  
+\vspace{10in}
+
+** Examples
+- Find an angle between 0 radians and \(2\pi\) radians that is
+  coterminal with the angle \(\frac{17\pi}{6}\) radians.
+- Find the reference angle associated with the angle \(\frac{15\pi}{18}\).
+
+#+begin_export latex
+\begin{tikzpicture}
+  \draw[step=0.375,help lines](-1.9,-1.9) grid (1.9,1.9);
+  \draw[->] (-2,0) -- (2,0) node[anchor=west] {$x$};
+  \draw[->] (0,-2) -- (0,2) node[anchor=south] {$y$};
+\end{tikzpicture}
+#+end_export  
+\vspace{10in}

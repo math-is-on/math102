@@ -1,0 +1,131 @@
+#+title: Solving Trigonometric Equations
+#+author: Chase Mathison
+#+date: 27 March 2024
+#+email: cmathiso@su.edu
+#+options: H:2 ':t ::t <:t email:t text:t todo:nil toc:nil 
+#+startup: showall
+#+startup: indent
+#+startup: hidestars
+#+startup: beamer
+#+latex_class: beamer
+#+latex_class_options: [presentation]
+#+COLUMNS: %40ITEM %10BEAMER_env(Env) %9BEAMER_envargs(Env Args) %5BEAMER_act(Act) %4BEAMER_col(Col) %10BEAMER_extra(Extra)
+#+latex_header: \mode<beamer>{\usetheme{Madrid}}
+#+latex_header: \definecolor{SUred}{rgb}{0.59375, 0, 0.17969} % SU red (primary)
+#+latex_header: \definecolor{SUblue}{rgb}{0, 0.17578, 0.38281} % SU blue (secondary)
+#+latex_header: \setbeamercolor{palette primary}{bg=SUred,fg=white}
+#+latex_header: \setbeamercolor{palette secondary}{bg=SUblue,fg=white}
+#+latex_header: \setbeamercolor{palette tertiary}{bg=SUblue,fg=white}
+#+latex_header: \setbeamercolor{palette quaternary}{bg=SUblue,fg=white}
+#+latex_header: \setbeamercolor{structure}{fg=SUblue} % itemize, enumerate, etc
+#+latex_header: \setbeamercolor{section in toc}{fg=SUblue} % TOC sections
+#+latex_header: % Override palette coloring with secondary
+#+latex_header: \setbeamercolor{subsection in head/foot}{bg=SUblue,fg=white}
+#+latex_header: \setbeamercolor{date in head/foot}{bg=SUblue,fg=white}
+#+latex_header: \institute[SU]{Shenandoah University}
+#+latex_header: \titlegraphic{\includegraphics[width=0.5\textwidth]{\string~/Documents/suLogo/suLogo.pdf}}
+#+latex_header: \newcommand{\R}{\mathbb{R}}
+
+* Announcements
+** Announcements
+1. Homework in M.O.M.
+2. Office hours, 10am - 11am.
+
+* Lecture
+** Solving Trig Equations
+
+Now we want to talk about how we might solve the equation
+\[
+\sin^2 (x) - 2\sin(x) + 1 = 0\]
+We'll build up to this equation, but first let's start with some simple examples.
+\vspace{10in}
+
+** Example
+Solve the equation
+\[
+\sin(x) = \frac{1}{2}\]
+for \( 0 \le x < 2\pi\)
+
+\vspace{10in}
+
+** Example
+
+** Example
+Solve the equation
+\[
+2\cos(x) - \sqrt{2} = 0 \]
+for \( 0 \le x < 2\pi\).
+\vspace{10in}
+
+** Example
+
+** General Guidelines
+
+We'll use the following general guidelines when solving more complicated trigonometric
+equations:
+
+#+attr_latex: :width 0.9\textwidth
+[[./pastClasses/solvingTrigEqs.png]]
+
+** Example
+
+Solve the equation
+\[
+2\sin^2(x) - 1 =0\]
+for \(0 \le x < 2\pi.\)
+
+\vspace{10in}
+
+** Example
+
+** Example
+Solve the equation
+\[
+\csc(x) = -2 \]
+for \(0 \le x < 4\pi.\)
+\vspace{10in}
+
+** Example
+
+** Example
+Sometimes we'll get solutions that don't involve special angles that we know,
+That's okay!  We can just use a calculator and the inverse trig functions.
+
+Solve:
+\[
+\sin(x) = 0.7\]
+for \(0 \le x < 2\pi.\)
+
+\vspace{10in}
+
+** Example
+
+** Example
+Time for a trickier one!
+
+Solve
+\[
+\sin^2(x) - \sin(x) - 1 = 0\]
+for \(0 \le x < 2\pi.\)
+
+
+\vspace{10in}
+
+** Example
+
+** Example
+
+Solve the following equation exactly:
+\[
+2\cos^2(x) + 3\cos(x) - 2 = 0\]
+for \(0 \le x < 4\pi.\)
+\vspace{10in}
+
+** Example
+
+** Example
+Solve
+\[
+2\sin(2x) + 1 = 0\]
+for \(0 \le x < 2 \pi\).
+\vspace{10in}

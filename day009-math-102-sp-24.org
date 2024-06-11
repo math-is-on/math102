@@ -1,0 +1,63 @@
+#+title: Applied Right Triangle Trigonometry
+#+author: Chase Mathison
+#+date: 12 February 2024
+#+email: cmathiso@su.edu
+#+options: H:2 ':t ::t <:t email:t text:t todo:nil toc:nil 
+#+startup: showall
+#+startup: indent
+#+startup: hidestars
+#+startup: beamer
+#+latex_class: beamer
+#+latex_class_options: [presentation]
+#+COLUMNS: %40ITEM %10BEAMER_env(Env) %9BEAMER_envargs(Env Args) %5BEAMER_act(Act) %4BEAMER_col(Col) %10BEAMER_extra(Extra)
+#+latex_header: \mode<beamer>{\usetheme{Madrid}}
+#+latex_header: \definecolor{SUred}{rgb}{0.59375, 0, 0.17969} % SU red (primary)
+#+latex_header: \definecolor{SUblue}{rgb}{0, 0.17578, 0.38281} % SU blue (secondary)
+#+latex_header: \setbeamercolor{palette primary}{bg=SUred,fg=white}
+#+latex_header: \setbeamercolor{palette secondary}{bg=SUblue,fg=white}
+#+latex_header: \setbeamercolor{palette tertiary}{bg=SUblue,fg=white}
+#+latex_header: \setbeamercolor{palette quaternary}{bg=SUblue,fg=white}
+#+latex_header: \setbeamercolor{structure}{fg=SUblue} % itemize, enumerate, etc
+#+latex_header: \setbeamercolor{section in toc}{fg=SUblue} % TOC sections
+#+latex_header: % Override palette coloring with secondary
+#+latex_header: \setbeamercolor{subsection in head/foot}{bg=SUblue,fg=white}
+#+latex_header: \setbeamercolor{date in head/foot}{bg=SUblue,fg=white}
+#+latex_header: \institute[SU]{Shenandoah University}
+#+latex_header: \titlegraphic{\includegraphics[width=0.5\textwidth]{\string~/Documents/suLogo/suLogo.pdf}}
+#+latex_header: \newcommand{\R}{\mathbb{R}}
+#+latex_header: \usepackage{tikz}
+#+latex_header: \usepackage{pgfplots}
+
+* Announcements
+** Announcements
+1. Homework in MyOpenMath
+2. Office hours: M - F, 10am - 11am
+
+* Lecture
+** Inclinometer Construction
+So how do we even measure this angle of elevation thing?
+
+(One) Answer: An inclinometer!
+
+You're going to make your own inclinometer now and we're going to go
+out and measure some angles and see if we can find the height of some structures on campus.
+
+** Demonstration
+
+** Applied Problems
+
+You want to measure the distance across a river.  To do this, you stand at the point \(A\)
+in the picture below and measure the distance to point \(B\), and the angle made between
+the lines \(AC\) and \(AB\).  What is the distance across the river?
+#+attr_latex: :width 0.5\textwidth
+[[./riverQ.png]]
+
+
+** Applied Problems
+
+** Applied Problems
+The ancient greeks were able to measure the radius of the earth pretty accurately
+using trigonometry.  Let's see how they did this.
+(We'll need: Syrene -> Alexandria: 5000 stadia (or about 800 km).  Length of shadow about .1228 m)
+
+\vspace{10in}
